@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>TwitchChat Poll Sample</title>
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	  <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!--STYLES-->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <!--STYLES END-->
+</head>
+<body>
+<embed  id="chatPlugin"
+        type="application/x-twitchchat-plugin"
+        width=0px
+        height=0px>
+</embed>
+<div class="container">
+
+   <div class='header'>
+        <nav>
+            <ul class='nav nav-pills pull-right'>
+                <li role='presentation' class='active'><a href='#'>Home</a></li>
+                <li role='presentation'><a href='#'>Previous Results</a></li>
+            </ul>
+        </nav>
+        <h3 class='text-muted'>Project name</h3>
+    </div>
+
+    <div class='jumbotron'>
+        <h1 id="title"></h1>
+        <h1 id="status">Status: Disconnected from chat</h1>
+            <h1>QuickPoll</h1>
+            <p class='lead'>Log in to your Twitch account to continue</p>
+            <form class='form-inline'>
+                <div class='form-group'>
+                    <input type='text' class='form-control' placeholder='Enter username' id='User' value="">
+                </div>
+                <div class='form-group'>
+                    <input type='password' class='form-control' id='Password' placeholder='Password' value="">
+                </div>
+                <div class='checkbox'>
+                    <label>
+                        <input type='checkbox'> Remember me
+                    </label>
+                </div>
+                <button type='button' class='btn btn-lg btn-success' id='btnpass'>Sign in</button>
+            </form>
+    </div>
+
+
+</div> <!-- /container -->
+
+<script src="assets/js/connect.js"></script>
+</body>
+</html>
